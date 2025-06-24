@@ -4,6 +4,17 @@ let PlayerOneInputField = document.querySelector(".input_text_Box_one");
 let PlayerOneButton = document.querySelector(".player_one_submit_btn");
 // Select the warning message element for Player One
 let PlayerOneTextWarning = document.querySelector(".player_one_warning");
+// Select the section for player One
+let playerOneSection = document.querySelector(".player_section_one")
+let playerTwoSection = document.querySelector(".player_section_two")
+
+
+
+
+
+
+
+
 
 // When Player One clicks the button, run a function
 PlayerOneButton.addEventListener("click", function(){
@@ -21,6 +32,16 @@ PlayerOneButton.addEventListener("click", function(){
   // if the input is a number between 1 to 10,
   else if (PlayerOneInputField.value < 1 || PlayerOneInputField.value > 10) {
     PlayerOneTextWarning.innerHTML = 'Please enter a valid number between 1 to 10';
+    // Clear the field
+    PlayerOneInputField.value= "";
+  } else {
+    //  If the input is a number between 1 to 10, hide the player one section and show the player two section
+    playerOneSection.style.display = 'none';
+    playerTwoSection.style.display = 'block';
+    // Clear the field
+    PlayerOneInputField.value= "";
+    
+    
   }
   
 });
