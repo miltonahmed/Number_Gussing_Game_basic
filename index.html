@@ -10,6 +10,31 @@
 
 <body>
 
+    <h1> Number Guessing Game</h1>
+
+    <div class="player_section_one">
+        <h2 class="heading">Player One</h2>
+        <!-- Player One Input Filed  -->
+        <input class="input_text_Box_one" type="text" min="1" max="10" placeholder="Enter your number">
+        <br>
+        <!-- Error  Text Warning  -->
+        <h4 class="player_one_warning"></h4>
+        <button class="player_one_submit_btn">Submit</button>
+    </div>
+
+    <div class="player_section_two">
+        <h2 class="heading">Player Two </h2>
+        <input class="input_text_Box_two" type="text" min="1" max="10" placeholder="Enter your guess">
+        <br>
+        <!-- Chance  -->
+        <h4 class="chance_title">Chance:<span class="chance"></span></h4>
+        <!-- Error  Text Warning  -->
+        <h4 class="player_two_warning"></h4>
+        <button class="player_two_submit_btn">guess The Number</button>
+        <h3 class="winner"></h3>
+
+    </div>
+
 
 
     <script src="assets/script.js"></script>
