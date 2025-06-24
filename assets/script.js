@@ -6,9 +6,14 @@ let PlayerOneButton = document.querySelector(".player_one_submit_btn");
 let PlayerOneTextWarning = document.querySelector(".player_one_warning");
 // Select the section for player One
 let playerOneSection = document.querySelector(".player_section_one")
+// Select the section for player Two
 let playerTwoSection = document.querySelector(".player_section_two")
-
-
+// Select the input field for Player Two
+let playerTwoInputFiled = document.querySelector(".input_text_Box_two")
+// Select the warning message element for Player Two
+let playerTwoTextWarning = document.querySelector(".player_two_warning")
+// Select the Player Two submit button
+let playerTwoButton = document.querySelector(".player_two_submit_btn")
 
 
 
@@ -39,9 +44,10 @@ PlayerOneButton.addEventListener("click", function(){
     playerOneSection.style.display = 'none';
     playerTwoSection.style.display = 'block';
     // Clear the field
-    PlayerOneInputField.value= "";
-    
+    playerTwoInputFiled.value= "";
     
   }
   
 });
+
+
