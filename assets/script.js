@@ -17,7 +17,10 @@ PlayerOneButton.addEventListener("click", function(){
     PlayerOneTextWarning.innerHTML = '  Invalid input.  Text is not accepted.';
     // Clear the field
     PlayerOneInputField.value= "";
-
+  }
+  // if the input is a number between 1 to 10,
+  else if (PlayerOneInputField.value < 1 || PlayerOneInputField.value > 10) {
+    PlayerOneTextWarning.innerHTML = 'Please enter a valid number between 1 to 10';
   }
   
 });
