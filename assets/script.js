@@ -7,5 +7,10 @@ let PlayerOneTextWarning = document.querySelector(".player_one_warning");
 
 // When Player One clicks the button, run a function
 PlayerOneButton.addEventListener("click", function(){
+  if(PlayerOneInputField.value === ""){
+    // if the input filed is empty, show the warning massage 
+    PlayerOneTextWarning.innerHTML =  "Please enter a number. This field can't be left blank.";
+    
+  } 
   
 });
