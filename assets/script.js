@@ -11,6 +11,13 @@ PlayerOneButton.addEventListener("click", function(){
     // if the input filed is empty, show the warning massage 
     PlayerOneTextWarning.innerHTML =  "Please enter a number. This field can't be left blank.";
     
-  } 
+  } //if the input is a number, show the input value
+  else if (isNaN(PlayerOneInputField.value)) {
+    // if the input is not a number , show warning message
+    PlayerOneTextWarning.innerHTML = '  Invalid input.  Text is not accepted.';
+    // Clear the field
+    PlayerOneInputField.value= "";
+
+  }
   
 });
