@@ -50,4 +50,29 @@ PlayerOneButton.addEventListener("click", function(){
   
 });
 
+playerTwoButton.addEventListener("click",function(){
+   if(playerTwoInputFiled.value === ""){
+    // if the input filed is empty, show the warning massage 
+    playerTwoTextWarning.innerHTML =  "Please enter a number. This field can't be left blank.";
+    
+  } //if the input is a number, show the input value
+  else if (isNaN(playerTwoInputFiled.value)) {
+    // if the input is not a number , show warning message
+    playerTwoTextWarning.innerHTML = '  Invalid input.  Text is not accepted.';
+    // Clear the field
+    playerTwoInputFiled.value= "";
+  }
+  // if the input is a number between 1 to 10,
+  else if (playerTwoInputFiled.value < 1 || playerTwoInputFiled.value > 10) {
+    playerTwoTextWarning.innerHTML = 'Please enter a valid number between 1 to 10';
+    // Clear the field
+    playerTwoInputFiled.value= "";
+  } else {
+    
+    // Clear the field
+    playerTwoInputFiled.value= "";
+    
+  }
+  
 
+})
