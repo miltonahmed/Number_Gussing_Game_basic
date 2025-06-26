@@ -28,3 +28,5 @@ A simple two-player number guessing game built with HTML, CSS, and JavaScript.
 - CSS3
 - JavaScript (Vanilla)
 
+- Live Link : https://miltonahmed.github.io/Number_Gussing_Game_basic/
+
